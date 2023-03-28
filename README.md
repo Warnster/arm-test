@@ -1,3 +1,30 @@
+# Running the Application
+## Install dependencies
+```yarn install```
+
+## Run development server
+```yarn dev```
+
+## Notes
+
+I used Vite tooling for development of react + swc and typescript
+
+I assumed the html wanted to be kept as .html files. I embedded an Iframe to load them in from the web, however i would have preferred to alter them to .jsx files and let react handle the rendering. The files were in a /storage folder which gave the assumtion they were not to be in a public folder, however without a backend to handle the emedding of html files i had move them into the /public folder
+
+The typescript using ```as type``` in certain areas of the application without correct parsing and checking of types, this was due to time limitations
+
+There is no jest tests, however I would normally add these in as well.
+
+Here is a link to a document I've written on how i usually write jest tests: https://scratch-bone-0e6.notion.site/Testing-Components-bc9f24e24f794d0a99b1e48f5d2a1cb3
+
+Here is a link to a document on my approach to writing components https://scratch-bone-0e6.notion.site/Components-b4c2bfe70f7245ac9a95c56b534a4aaf
+
+## Packages used
+
+Tailwindcss
+React-router
+
+
 # A Fake Document Service - mini-project
 
 Hello! This README is to serve as instructions for this mini-project. All required information should be available below and provided as part of this package (if not, please contact us!) Please only spend a **maximum** of a few hours on this. We can discuss your approach as well as any un-implemented features in our second interview stage. To make sure this README is viewed as intended, please use a markdown viewer to view this document.
